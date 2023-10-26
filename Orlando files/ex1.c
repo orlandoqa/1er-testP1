@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 int main () {
-  fprintf ("Hello, World");
+  fprintf (stdout, "Hello, World");
   return 0;
 }
