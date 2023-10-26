@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 int main () {
-  fprintf ("Goodbye\nsee you\n");
+  fprintf (stdout, "Goodbye\nsee you\n");
   return 0;
 }
