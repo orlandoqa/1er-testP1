@@ -1,1 +1,38 @@
+#include <stdio.h>
+
+float rectangle(float base, float height, float *p_area);
+
+int main() {
+    float base, height, area, perimeter;
+
+    // Request input from the user
+    printf("Enter the base of the rectangle: ");
+    scanf("%f", &base);
+
+    printf("Enter the height of the rectangle: ");
+    scanf("%f", &height);
+
+    // Calculate area and perimeter
+    perimeter = rectangle(base, height, &area);
+
+    // Display results
+    printf("Base: %.2f cm\n", base);
+    printf("Height: %.2f cm\n", height);
+    printf("Area: %.2f cm x cm\n", area);
+    printf("Perimeter: %.2f cm\n", perimeter);
+
+    return 0;
+}
+
+float rectangle(float base, float height, float *p_area) {
+    // Calculate area
+    *p_area = base * height;
+
+    // Calculate perimeter
+    float perimeter = 2 * (base + height);
+
+    // Return perimeter
+    return perimeter;
+
+}
 
