@@ -30,4 +30,3 @@ float rectangle(float base, float height, float *p_area) {
     return perimeter;
 
 }
-
